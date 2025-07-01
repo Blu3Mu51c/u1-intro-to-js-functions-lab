@@ -155,3 +155,48 @@ const basicCalculator = (num1, num2, operation) => {
 
 }
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+
+//LEVEL UP CONTENT
+
+//Exercise 10
+function calculateGrade(score){
+    if(score>=90){
+        return `A`;
+    }
+    
+   else if(score >= 80 && score <= 89){
+        return `B`;
+    }
+    
+   else if(score >= 70 && score <= 79){
+        return `C`;
+    }
+    
+   else if(score >= 60 && score <= 69){
+        return `D`;
+    }
+
+    else {
+        return `F`;
+    }
+    
+}
+
+console.log('Exercise 10 Result:', calculateGrade(85));
+
+//Exercise 11
+const createUsername = (firstName, lastName) => {
+    let count = firstName.length+lastName.length;
+    username=firstName.slice(0,3)+lastName.slice(0,3)+count;
+    return username;
+}
+
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+
+//Exercise 12
+
+const numArgs = (...argument) => {   
+        return argument.length;
+}
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
