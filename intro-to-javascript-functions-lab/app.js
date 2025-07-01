@@ -100,7 +100,7 @@ const calculateTip = (billAmount,tipPercentage) => {
     return billAmount/100 *tipPercentage;
 }
 
-console.log('Exercise 7 Result:', calculateTip(50, 20.80));
+console.log('Exercise 7 Result:', calculateTip(50, 20));
 
 
 
